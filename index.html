@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">My Responsive Portfolio</div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about">
+        <img src="images/My Photo.webp" alt="My Photo" class="profile-img">
+        <div class="about-text">
+            <h1>Hi, I'm <span>Ganeshan</span></h1>
+            <h3>Frontend Developer</h3>
+            <p>I am passionate about building clean, responsive, and user-friendly websites using HTML5, CSS3, and JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/my online meals project 1.png" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Short description about this project. Built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project">
+                <img src="images/travel page project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Short description about this project. Built using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 My Responsive Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('showing');
+        });
+    </script>
+
+</body>
+</html>
